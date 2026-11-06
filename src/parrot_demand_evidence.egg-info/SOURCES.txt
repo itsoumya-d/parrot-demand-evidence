@@ -1,0 +1,9 @@
+pyproject.toml
+src/parrot_demand/__init__.py
+src/parrot_demand/engine.py
+src/parrot_demand_evidence.egg-info/PKG-INFO
+src/parrot_demand_evidence.egg-info/SOURCES.txt
+src/parrot_demand_evidence.egg-info/dependency_links.txt
+src/parrot_demand_evidence.egg-info/requires.txt
+src/parrot_demand_evidence.egg-info/top_level.txt
+tests/test_engine.py
