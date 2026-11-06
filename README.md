@@ -55,3 +55,16 @@ curl http://127.0.0.1:8000/api/titles/the-last-signal
 
 This is a reference implementation. It does not claim live Parrot Analytics data,
 DEMAND360 access or production deployment.
+
+
+## Recommendation ranking module
+
+`src/parrot_demand/recommendations.py` adds a SoundCloud-shaped recommendation layer:
+
+- Recency-weighted artist affinity with configurable half-life.
+- Co-listen and freshness signals.
+- Repetition penalty for overplayed tracks.
+- Ranked candidates with explanation reasons.
+- NDCG@k and precision@k offline evaluation.
+
+The module is covered by 21 tests alongside the 31 existing demand/evidence tests.
